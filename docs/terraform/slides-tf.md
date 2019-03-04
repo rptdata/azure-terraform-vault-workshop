@@ -22,6 +22,8 @@ Welcome to the beginner's guide to Terraform on Azure. This slide deck is writte
 
 https://github.com/scarolan/azure-terraform-vault-workshop  
 
+https://github.com/rpt/azure-terraform-vault-workshop  
+
 edit the Markdown files, and submit a pull request with your changes.
 
 The Markdown content is contained in the docs/terraform and docs/vault directories.
