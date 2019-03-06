@@ -382,14 +382,31 @@ name: Vault-Authorization-3
 Write the Policies
 -------------------------
 
-All that is left is for us to write the policies to Vault:
+All that is left is for us to write the policies to Vault.  This can be done via the CLI or UI.
+
+CLI
 ```bash
 # Write the policies
 vault policy write lob_a lob_a_policy.hcl
 vault policy write secret secret.hcl
 ```
+---
+name: Vault-Authorization-4
+Write the Policies
+-------------------------
+Create a Policy via UI
 
-We can verify that we were successful by reading the policy endpoint:
+UI
+.center[![:scale 70%](images/policies.png)]
+.center[![:scale 70%](images/lob_a_policy.png)]
+.center[![:scale 70%](images/secret_policy.png)]
+
+---
+
+name: Vault-Authorization-5
+Write the Policies
+-------------------------
+We can verify that we were successful by reading the policy endpoint or via the UI:
 
 Command:
 ```powershell
@@ -406,6 +423,8 @@ root
 secret
 ```
 
+UI
+.center[![:scale 70%](images/policy_list.png)]
 ---
 
 name: Chapter-5
@@ -542,8 +561,13 @@ Dynamic Secrets: Enable and Create Role
 
 We will now enable the database secret engine, and create a couple of roles
 
-The following commands should be run on the Vault server:
+If you have not yet run the vault_setup.sh script on the vault server, please do so now.
+```bash
+# Run vault setup script
+./vault_setup.sh
+```
 
+Let's look at some of the commands run in vault_setup.sh.  
 ```bash
 # Enable database secrets engine
 vault secrets enable -path=lob_a/workshop/database database
