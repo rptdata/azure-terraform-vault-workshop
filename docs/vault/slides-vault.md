@@ -378,7 +378,7 @@ path "secret/*" {
 ```
 ---
 
-name: Vault-Authorization-CLI
+name: Vault-Authorization-3
 Write the Policies
 -------------------------
 
@@ -391,7 +391,7 @@ vault policy write lob_a lob_a_policy.hcl
 vault policy write secret secret.hcl
 ```
 ---
-name: Vault-Authorization-UI
+name: Vault-Authorization-4
 Write the Policies
 -------------------------
 Create a Policy via UI
@@ -403,7 +403,7 @@ UI
 
 ---
 
-name: Vault-Policies-Verify
+name: Vault-Authorization-5
 Write the Policies
 -------------------------
 We can verify that we were successful by reading the policy endpoint or via the UI:
