@@ -1987,4 +1987,18 @@ Terraform Azurerm Provider Documentation
 https://www.terraform.io/docs/providers/azurerm/
 
 Link to this Slide Deck  
-https://scarolan.github.io/azure-terraform-vault-workshop/terraform
+https://arptdemolab1988.z13.web.core.windows.net
+
+---
+name: credits
+Credits
+-------------------------
+A big shout out to Sean Carolan from HashiCorp who developed this lab.
+
+.center[![:scale 50%](images/sean.jpeg)]
+
+Be sure to check out more of Sean's content:
+
+https://scarolan.github.io/
+
+https://github.com/scarolan
