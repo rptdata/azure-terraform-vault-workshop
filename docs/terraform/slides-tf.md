@@ -20,8 +20,6 @@ HTML comments like this one will show up in the source code, but not in the slid
 
 Welcome to the beginner's guide to Terraform on Azure. This slide deck is written entirely in Markdown language, which means you can make edits or additions, then submit a pull request to add your changes to the master copy. To make edits to the slide deck simply fork this repository:  
 
-https://github.com/scarolan/azure-terraform-vault-workshop  
-
 https://github.com/rpt/azure-terraform-vault-workshop  
 
 edit the Markdown files, and submit a pull request with your changes.
@@ -583,7 +581,7 @@ Run the following commands to clone the training repository from GitHub:
 
 ```powershell
 cd ~/Desktop
-git clone https://github.com/scarolan/azure-terraform-vault-workshop
+git clone https://github.com/rptdata/azure-terraform-vault-workshop
 cd azure-terraform-vault-workshop
 ```
 
@@ -801,6 +799,14 @@ The **terraform.tfvars** file is your own personal settings file. You can use it
 **Let's go ahead and set this variable in a file so we don't have to type it in every time we run terraform commands. You're going to simply rename the terraform.tfvars.example file to terraform.tfvars. Terraform knows to look for files that end in .tf or .tfvars. You can right click the file right inside VSC to rename it. You may put any text you like here but be sure and avoid very common names and words, or add a number to the end to guarantee it is unique.**
 
 NOTE TO INSTRUCTOR: If students have a very common name, they should add a number to the end of it to guarantee that it is available. The default Azure public 'cloudapp' DNS zone is a global namespace. If your student enters a very common word here, there's a chance it could be taken already. This will cause the Terraform run to fail.
+
+---
+name: save-often
+Save Files Often
+-------------------------
+Save your files before re-running a `terraform plan` or `terraform apply`
+
+.center[![:scale 70%](images/saveoften.jpg)]
 
 ---
 name: defining-variables

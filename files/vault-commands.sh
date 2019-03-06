@@ -59,9 +59,9 @@ vault write -f lob_a/workshop/transit/keys/customer-key
 vault write -f lob_a/workshop/transit/keys/archive-key
 
 # Install app prerequisites
-sudo apt-get -y update > /dev/null 2>&1
-sudo apt-get install -y python3-pip > /dev/null 2>&1
-sudo pip3 install mysql-connector-python hvac Flask > /dev/null 2>&1
+sudo apt-get -y update > ~/vaultsetup.log 2>&1
+sudo apt-get install -y python3-pip > ~/vaultsetup.log 2>&1
+sudo pip3 install mysql-connector-python hvac Flask > ~/vaultsetup.log 2>&1
 
 # Retrieve test credentials
 vault read lob_a/workshop/database/creds/workshop-app-long

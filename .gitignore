@@ -10,3 +10,7 @@
 
 # Remote state file
 remote_state.tf
+
+# DS Files
+*.DS_*
+*.ds_*
