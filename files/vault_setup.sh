@@ -43,9 +43,10 @@ vault write -f lob_a/workshop/transit/keys/customer-key
 vault write -f lob_a/workshop/transit/keys/archive-key
 
 # Install app prerequisites
-sudo apt-get -y update > ~/vaultsetup.log 2>&1
-sudo apt-get install -y python3-pip > ~/vaultsetup.log 2>&1
-sudo pip3 install mysql-connector-python hvac python3-flask > ~/vaultsetup.log 2>&1
+sudo apt-get -y update >> ~/vaultsetup.log 2>&1
+sudo apt-get install -y python3-pip >> ~/vaultsetup.log 2>&1
+sudo pip3 install mysql-connector-python hvac Flask >> ~/vaultsetup.log 2>&1
+
 
 git clone https://github.com/norhe/transit-app-example.git
 

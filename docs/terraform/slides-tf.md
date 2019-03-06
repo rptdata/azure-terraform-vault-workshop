@@ -804,7 +804,7 @@ NOTE TO INSTRUCTOR: If students have a very common name, they should add a numbe
 name: save-often
 Save Files Often
 -------------------------
-Save your files before re-running a `terraform plan` or `terraform apply`
+Save your files before running any terraform commands.  Things tend to work better after they are saved.
 
 .center[![:scale 70%](images/saveoften.jpg)]
 
