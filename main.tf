@@ -201,7 +201,7 @@ resource "azurerm_mysql_firewall_rule" "vault-mysql" {
   start_ip_address    = "${data.azurerm_public_ip.vault-pip.ip_address}"
   end_ip_address      = "${data.azurerm_public_ip.vault-pip.ip_address}"
 }
-resource "azurerm_mysql_firewall_rule" "vault-mysql" {
+resource "azurerm_mysql_firewall_rule" "vault-workstation" {
   name                = "vault-workstation"
   resource_group_name = "${azurerm_resource_group.vaultworkshop.name}"
   server_name         = "${azurerm_mysql_server.mysql.name}"
