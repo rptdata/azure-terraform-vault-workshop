@@ -396,18 +396,36 @@ Write the Policies
 -------------------------
 Create a Policy via UI
 
-UI
+Show Policies
 .center[![:scale 70%](images/policies.png)]
+
+---
+name: Vault-Authorization-5
+Write the Policies
+-------------------------
+Create a Policy via UI
+
+Upload lob_a Policy
 .center[![:scale 70%](images/lob_a_policy.png)]
+
+---
+name: Vault-Authorization-6
+Write the Policies
+-------------------------
+Create a Policy via UI
+
+Upload secret Policy
+
 .center[![:scale 70%](images/secret_policy.png)]
 
 ---
 
-name: Vault-Authorization-5
-Write the Policies
+name: Vault-Authorization-7
+List the Policies
 -------------------------
 We can verify that we were successful by reading the policy endpoint or via the UI:
 
+CLI
 Command:
 ```powershell
 vault list sys/policy
@@ -423,8 +441,15 @@ root
 secret
 ```
 
+---
+
+name: Vault-Authorization-8
+List the Policies
+-------------------------
 UI
+
 .center[![:scale 70%](images/policy_list.png)]
+
 ---
 
 name: Chapter-5
