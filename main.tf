@@ -209,3 +209,10 @@ resource "azurerm_mysql_firewall_rule" "vault-workstation" {
   end_ip_address      = "52.188.218.208"
 }
 
+resource "azurerm_mysql_firewall_rule" "vault-workstation2" {
+  name                = "vault-workstation2"
+  resource_group_name = "${azurerm_resource_group.vaultworkshop.name}"
+  server_name         = "${azurerm_mysql_server.mysql.name}"
+  start_ip_address    = "173.75.37.121"
+  end_ip_address      = "173.75.37.121"
+}
