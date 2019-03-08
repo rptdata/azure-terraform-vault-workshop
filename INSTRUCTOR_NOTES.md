@@ -1,5 +1,7 @@
 # Instructor Notes - Azure Terraform/Vault Workshop
 
+Test here....
+
 ## Setting up the lab
 If you have access to the HashiCorp Azure Demo environment, you can simply browse to the Azure Dev/Test labs section and click on *se-training-lab*. If you're a partner or external user, skip down to the "Building an Azure Windows 10 Workstation" section to create a reusable custom image. Once you've got your custom Windows 10 image the process is pretty simple:
 
